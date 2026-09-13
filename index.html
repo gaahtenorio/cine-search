@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#1b1b49"
+    >
+
+    <meta
+        name="description"
+        content="CineSearch - Search for movies and discover nearby cinemas."
+    >
+
+    <title>CineSearch</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="manifest"
+        href="manifest.json"
+    >
+
+    <link
+        rel="icon"
+        href="icons/icon-192.png"
+    >
+
+</head>
+
+
+<body>
+
+
+    <header>
+
+        <h1>CineSearch</h1>
+
+
+        <nav>
+
+            <a
+                href="#"
+                id="home-link"
+            >
+                Home
+            </a>
+
+        </nav>
+
+
+        <form id="home-search-form">
+
+            <input
+                type="text"
+                id="home-search"
+                placeholder="Search for a movie"
+            >
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+    </header>
+
+
+
+    <main class="container">
+
+        <section id="home">
+
+            <h2>Now in Cinemas</h2>
+
+
+            <div id="movies">
+
+                <p class="loading">
+                    Loading movies...
+                </p>
+
+            </div>
+
+            <section id="location-section">
+
+                <h2>Nearby Cinemas</h2>
+
+                <p>
+                    Allow your location to find cinemas near you.
+                </p>
+
+
+                <button
+                    id="location-button"
+                    type="button"
+                >
+                    📍 Use my location
+                </button>
+
+
+                <div id="location-message"></div>
+
+
+                <div id="cinemas"></div>
+
+            </section>
+
+        </section>
+
+        <section id="search-page">
+
+
+            <form id="search-form">
+
+                <input
+                    type="text"
+                    class="search"
+                    id="search"
+                    placeholder="Search for a movie"
+                >
+
+
+                <button
+                    id="search-button"
+                    class="bnt bnt-search"
+                    type="submit"
+                >
+                    Search
+                </button>
+
+            </form>
+
+
+
+            <h2>Movie Information</h2>
+
+
+            <div id="info"></div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <p>
+            Movie data and images provided by TMDB.
+        </p>
+
+
+        <p>
+            This product uses the TMDB API but is not endorsed or certified by TMDB.
+        </p>
+
+
+        <p>
+            Cinema data © OpenStreetMap contributors.
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
